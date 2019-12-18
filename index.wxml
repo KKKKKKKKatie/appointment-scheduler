@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class="plate">
+  <navigator url="/pages/signup/signup">
+     <view class="plate-img">
+       <image src="{{a2src}}"></image>
+       </view>
+       <text class="plate-info">
+        Make Appointment
+       </text>
+  </navigator>
+  
+</view>

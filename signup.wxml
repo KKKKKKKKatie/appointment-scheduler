@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="ar_cont">
+        <text class="ar_cont_h1">chooes your date and time</text>
+        <view class="ar_date_time">
+            <view class="ar_date">
+                <image src="../../image/date.png"></image>
+                <picker mode="date" placeholder="date" value="{{date}}" start="2019-09-01" end="2020-09-01" bindchange="bindDateChange" >
+                    <view>
+                        {{date}}
+                    </view>
+                </picker>
+            </view>
+            <view class="ar_time">
+                <image src="../../image/time.png"></image>
+                <picker mode="time" placeholder="date" value="{{time}}" start="01:00" end="24:00" bindchange="bindTimeChange">
+                    <view>
+                        {{time}}
+                    </view>
+                </picker>
+            </view>
+        </view>
+
+        <text class="ar_cont_h1">leave message</text>
+
+        <input type="text" placeholder="" class="input_msg" placeholder-style="font-family:''"/>
+
+        <button class="ar_book" bindtap="bindToastTap">confirm</button>
+        <toast hidden="{{bookToastHidden}}"  bindchange="hideToast">
+        success
+        </toast>
+    </view>
+
+</view>
